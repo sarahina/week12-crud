@@ -8,7 +8,9 @@
     • Use a form to post new entities.
     • Build a way for users to update or delete entities
     • Use Bootstrap and CSS to style your project.
-
+    
+    
 Recommended API:
 MockAPI is a great recommendation for this project!
 Get more tips on CRUD with MockAPI!
+
