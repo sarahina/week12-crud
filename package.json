@@ -1,0 +1,23 @@
+{
+  "name": "week12-crud",
+  "version": "1.0.0",
+  "description": "• Create a full CRUD application of your choice      using either an API or local Array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahina/week12-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahina/week12-crud/issues"
+  },
+  "homepage": "https://github.com/sarahina/week12-crud#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3"
+  }
+}

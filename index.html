@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>To Do CRUD</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="may-1">
+
+    <main>
+        <div class="container">
+
+
+            <div>
+                <h1 class="text-center mb-5 shadow-sm p-3" id="title">
+                    <i class="fa-solid fa-list-check"></i> TO-DO LIST <i class="fa-solid fa-list-check"></i>
+                </h1>
+
+
+                <div class="row">
+                    <div class="col-md-7 shadow rounded p-5">
+                        <div class="row">
+
+
+                            <!-- Form -->
+                            <form id="todo" class="row g-3">
+
+                                <input type="hidden" class="form-control" id="record-id" name="id" />
+
+
+                                <div class="col-md-6">
+                                    <label for="new-start-date" class="form-label">Start Date</label>
+                                    <input type="date" value="startDate" class="form-control" id="new-start-date"
+                                        name="start" />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="new-end-date" class="form-label">End Date</label>
+                                    <input type="date" value="endDate" class="form-control" id="new-end-date"
+                                        name="end" />
+
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="new-task" class="form-label" required>Task</label>
+                                    <input type="text" class="form-control" id="new-task" name="task"
+                                        placeholder="Add a new task" required />
+                                    <div class="invalid-feedback">
+                                        Please fill out this field.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button class="btn btn-danger" id="add" type="submit">
+                                        Create <i class="fas fa-plus"></i>
+                                    </button>
+                                    <button class="btn btn-danger disabled" id="update" type="button">
+                                        Update <i class="fa-regular fa-floppy-disk"></i>
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="row"></div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="m-lg-5">
+                            <img src="https://clickup.com/blog/wp-content/uploads/2019/01/to-do-list-apps.png"
+                                alt="Image" class="img-fluid" />
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <table id="list" class="table table-danger table-striped text-center table-hover">
+                        <thead>
+                            <tr>
+                                <th>Task</th>
+                                <th>Date Created</th>
+                                <th>Start Date</th>
+                                <th>Due Date</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/d0d7938bfd.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
